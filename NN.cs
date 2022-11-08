@@ -58,7 +58,7 @@ public class NN : MonoBehaviour
         layers = new Layer[networkShape.Length - 1];
         for(int i = 0; i < layers.Length; i++)
         {
-            layer[i] = new Layer(networkShape[i], networkShape[i + 1]);
+            layers[i] = new Layer(networkShape[i], networkShape[i + 1]);
         }
 
     }
